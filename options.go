@@ -680,9 +680,9 @@ func (opts *Options) SetPurgeRedundantKvsWhileFlush(value bool) {
 //
 // Data being read from file storage may be buffered in the OS
 // Default: true
-func (opts *Options) SetAllowOsBuffer(value bool) {
-	C.rocksdb_options_set_allow_os_buffer(opts.c, boolToChar(value))
-}
+// func (opts *Options) SetAllowOsBuffer(value bool) {
+// 	C.rocksdb_options_set_allow_os_buffer(opts.c, boolToChar(value))
+// }
 
 // SetAllowMmapReads enable/disable mmap reads for reading sst tables.
 // Default: false
